@@ -33,9 +33,16 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background dark:bg-dark-background p-4 transition-colors duration-300">
-      <div className="w-full max-w-md">
-        <div className="card p-8 shadow-xl">
+    <div 
+      className="min-h-screen flex items-center justify-center p-4 transition-colors duration-300"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.8)), url("/login_bg.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="w-full max-w-md relative z-10">
+        <div className="card p-8 shadow-2xl border-white/20 dark:border-white/10 bg-white/95 dark:bg-dark-surface/95 backdrop-blur-md">
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-600 text-white font-bold text-3xl mb-4 shadow-lg shadow-primary-500/30">
               I
